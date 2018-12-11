@@ -1,38 +1,38 @@
 <?php
+ini_set('memory_limit', -1);
+set_time_limit(-1);
 /**
  * Created by PhpStorm.
  * User: luuhoa
  * Date: 12/10/18
  * Time: 10:44 PM
  */
+include_once "CrawlerData.php";
 
-namespace Crawler;
-include_once "vendor/autoload.php";
+echo "\n\t Start Time: " . time() . "\n\t";
+$crawlerData = new \CrawlerData\CrawlerData();
 
-use Symfony\Component\DomCrawler\Crawler;
+$total_url = 0;
+$data = array();
 
+$start = 52;
+$end = $start + 9;
+file_put_contents('position.txt', $start . '->' . $end . PHP_EOL, FILE_APPEND | LOCK_EX);
+for ($i = 1; $i <= 1819; $i++) {
+    $url = "https://www.carlist.my/new-cars-for-sale/malaysia?page_number=$i&page_size=25";
 
-class CrawlerData
-{
-    public function crawl()
-    {
-        $html = <<<'HTML'
-<!DOCTYPE html>
-<html>
-    <body>
-        <p class="message">Hello World!</p>
-        <p>Hello Crawler!</p>
-        <div id="test">ID test</div>
-        <div class="test">Class test</div>
-    </body>
-</html>
-HTML;
-
-        $crawler = new Crawler($html);
-        $crawler = $crawler->filter('body > p');
-        var_dump($crawler);
+    $html = $crawlerData->crawl($url);
+    $response = $crawlerData->getDomHtml($html);
+    foreach ($response as $item) {
+        $href = $item->getAttribute('href');
+        file_put_contents('danh-sach-href.txt', $href . PHP_EOL, FILE_APPEND | LOCK_EX);
+        $data[] = $href;
+        $total_url++;
     }
 }
 
-$objectCrawl = new CrawlerData();
-$objectCrawl->crawl();
+
+echo $total_url;
+
+echo "\n\t End Time: " . time() . "\n\t";
+die;
