@@ -19,7 +19,18 @@ $urlPageCate = "https://www.carlist.my/new-cars-for-sale/malaysia?page_number=$i
 //$response = getListUrlFromCate($urlPageCate);
 
 $url = 'https://www.carlist.my/new-cars/perodua-axia-1-0g-auto-high-loan-otr-price-rm33400-only/5428538';
-parseContentDetail($url);
+//parseContentDetail($url);
+$properties = array(
+    'name' => 'Teasfaaaaaaaaaaasdfasdfst',
+    'slug' => 'pa_tesddddassst',
+    'type' => 'select',
+    'order_by' => 'menu_order',
+    'has_archives' => true
+);
+//insertProperties($properties);
+$a = getListProperties();
+echo '<pre>'; var_dump($a);
+die;
 
 function getListUrlFromCate($urlPageCate)
 {
@@ -75,6 +86,51 @@ function cleanContent($content, $type = 'string')
     }
 }
 
+function getListProperties($properties = array())
+{
+    $woocommerce = connectWoocomerce();
+    $list_properties = $woocommerce->get('products/attributes');
+
+    $flag = $id = false;
+    if (!empty($property)) {
+        foreach ($list_properties as $item) {
+            if ($properties['slug'] == $item->slug) {
+                $id = $item->id;
+                $flag = true;
+            }
+        }
+    } else {
+        return $list_properties;
+    }
+
+    if (!$flag) {
+        // insert properties
+        $id = insertProperties($properties);
+    }
+    return $id;
+}
+
+function insertProperties($properties)
+{
+    $woocommerce = connectWoocomerce();
+    $result = $woocommerce->post('products/attributes', $properties);
+    return $result->id;
+}
+
+function connectWoocomerce()
+{
+    $woocommerce = new Client(
+        'http://wordpress.local',
+        'ck_eb13f3c3186bb03b645b4f88793bffc3c06d2286',
+        'cs_591ffff8e6459c3b31cf1ec702ef0f31803265a6',
+        [
+            'wp_api' => true,
+            'version' => 'wc/v2',
+        ]
+    );
+    return $woocommerce;
+}
+
 function parseContentDetail($urlDetail)
 {
     $username = 'nginx';
@@ -122,26 +178,13 @@ function parseContentDetail($urlDetail)
         $product['categories'] = array(array('id' => 15), array('id' => 148));
 
         try {
-            $woocommerce = new Client(
-                'http://wordpress.local',
-                'ck_eb13f3c3186bb03b645b4f88793bffc3c06d2286',
-                'cs_591ffff8e6459c3b31cf1ec702ef0f31803265a6',
-                [
-                    'wp_api' => true,
-                    'version' => 'wc/v2',
-                ]
-            );
-
+            $woocommerce = connectWoocomerce();
             $rs = $woocommerce->post('products', $product);
 
             if ($rs) {
                 echo 'Ok';
-                var_dump($rs);
                 die;
-            } else {
-                die('sadfaslkdfjasldfjsalkdfjsaldkfjasdf');
             }
-
             $lastRequest = $woocommerce->http->getRequest();
             $lastRequest->getUrl(); // Requested URL (string).
             $lastRequest->getMethod(); // Request method (string).
