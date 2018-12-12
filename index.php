@@ -9,30 +9,26 @@ set_time_limit(-1);
  */
 include_once "CrawlerData.php";
 
-echo "\n\t Start Time: " . time() . "\n\t";
+$time = time();
+echo "\n\t Start Time: " . $time . "\n\t";
 $crawlerData = new \CrawlerData\CrawlerData();
 
 $total_url = 0;
 $data = array();
 
-$start = 52;
-$end = $start + 9;
-file_put_contents('position.txt', $start . '->' . $end . PHP_EOL, FILE_APPEND | LOCK_EX);
-for ($i = 1; $i <= 1819; $i++) {
+for ($i = 1; $i <= 3; $i++) {
     $url = "https://www.carlist.my/new-cars-for-sale/malaysia?page_number=$i&page_size=25";
 
     $html = $crawlerData->crawl($url);
     $response = $crawlerData->getDomHtml($html);
     foreach ($response as $item) {
         $href = $item->getAttribute('href');
-        file_put_contents('danh-sach-href.txt', $href . PHP_EOL, FILE_APPEND | LOCK_EX);
+        file_put_contents('C:\xampp\htdocs\crawler\danh-sach-href-25.txt', $href . PHP_EOL, FILE_APPEND | LOCK_EX);
         $data[] = $href;
         $total_url++;
     }
 }
 
-
 echo $total_url;
-
-echo "\n\t End Time: " . time() . "\n\t";
+echo "\n\t End Time: " . (time() - $time) . "\n\t";
 die;

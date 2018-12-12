@@ -2,7 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bac431b-293e-4838-a4f7-8584af07fbe2" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CrawlerData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/crawl-url-detail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/simplehtmldom/simple_html_dom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/class-wc-api-client-authentication.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/class-wc-api-client-http-request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/class-wc-api-client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/exceptions/class-wc-api-client-exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/exceptions/class-wc-api-client-http-exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/abstract-wc-api-client-resource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-coupons.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-custom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-customers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-order-notes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-order-refunds.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-orders.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-products.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-reports.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/lib/woocommerce-api/resources/class-wc-api-client-resource-webhooks.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/phpcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/Client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/BasicAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/HttpClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/HttpClientException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/OAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/Options.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/Request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/src/WooCommerce/HttpClient/Response.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/ClientTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/HttpClient/BasicAuthTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/HttpClient/HttpClientExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/HttpClient/OAuthTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/HttpClient/OptionsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/HttpClient/RequestTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/WooCommerce/Tests/HttpClient/ResponseTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/automattic/woocommerce/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/ClassLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/autoload_classmap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/autoload_namespaces.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/autoload_psr4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/autoload_real.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/autoload_static.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htmldom/vendor/composer/installed.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/danh-sach-href.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
@@ -49,39 +102,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="crawl-url-detail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htmldom/crawl-url-detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrawlerData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CrawlerData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Crawler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/dom-crawler/Crawler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="625" column="32" lean-forward="true" selection-start-line="625" selection-start-column="32" selection-end-line="625" selection-end-column="32" />
+            <state relative-caret-position="283">
+              <caret line="95" column="50" lean-forward="true" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>find</find>
+      <find>$product_url</find>
+      <find>$html</find>
+      <find>str_get_html($html)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$urlDetail</replace>
+      <replace>$objectHtml</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,9 +135,13 @@
         <option value="$PROJECT_DIR$/crawl-01.php" />
         <option value="$PROJECT_DIR$/Crawler.php" />
         <option value="$PROJECT_DIR$/CrawlerData.php" />
-        <option value="$PROJECT_DIR$/danh-sach-href.txt" />
         <option value="$PROJECT_DIR$/position.txt" />
+        <option value="$PROJECT_DIR$/danh-sach-href.txt" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/htmldom/Crawler.php" />
+        <option value="$PROJECT_DIR$/htmldom/danh-sach-href.txt" />
+        <option value="$PROJECT_DIR$/htmldom/lib/simplehtmldom/simple_html_dom.php" />
+        <option value="$PROJECT_DIR$/htmldom/crawl-url-detail.php" />
       </list>
     </option>
   </component>
@@ -127,6 +174,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -139,9 +187,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htmldom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,6 +211,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\crawler\htmldom" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -214,6 +280,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -251,33 +323,34 @@
       <option name="presentableId" value="Default" />
       <updated>1544456488482</updated>
       <workItem from="1544456492051" duration="1368000" />
-      <workItem from="1544518680884" duration="6151000" />
+      <workItem from="1544518680884" duration="6705000" />
+      <workItem from="1544583174409" duration="18874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7519000" />
+    <option name="totallyTimeSpent" value="26947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2524013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -292,6 +365,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CrawlerData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/dom-crawler/Crawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11742">
+          <caret line="625" column="32" lean-forward="true" selection-start-line="625" selection-start-column="32" selection-end-line="625" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -313,7 +412,7 @@
         <state relative-caret-position="380">
           <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
           <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
+            <element signature="e#6#89#0#PHP" expanded="false" />
             <marker date="1544518607968" expanded="true" signature="185:388" ph="..." />
             <marker date="1544518607968" expanded="true" signature="192:380" ph="..." />
           </folding>
@@ -340,36 +439,10 @@
         <state relative-caret-position="494">
           <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
+            <element signature="e#6#89#0#PHP" expanded="false" />
             <marker date="1544518607968" expanded="true" signature="185:388" ph="..." />
             <marker date="1544518607968" expanded="true" signature="192:380" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/dom-crawler/Crawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="625" column="32" lean-forward="true" selection-start-line="625" selection-start-column="32" selection-end-line="625" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrawlerData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danh-sach-href.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="2700" column="0" lean-forward="true" selection-start-line="2700" selection-start-column="0" selection-end-line="2700" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -377,14 +450,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/danh-sach-href.txt" />
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/dom-crawler/Crawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="625" column="32" lean-forward="false" selection-start-line="625" selection-start-column="32" selection-end-line="625" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmldom/vendor/composer/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CrawlerData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="133" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmldom/Crawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmldom/lib/simplehtmldom/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmldom/danh-sach-href.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1130">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmldom/crawl-url-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="95" column="50" lean-forward="true" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
           <folding />
         </state>
       </provider>
