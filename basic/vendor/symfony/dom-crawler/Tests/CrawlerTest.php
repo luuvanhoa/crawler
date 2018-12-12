@@ -129,7 +129,7 @@ class CrawlerTest extends TestCase
     public function testAddHtmlContentUnsupportedCharset()
     {
         $crawler = new Crawler();
-        $crawler->addHtmlContent(file_get_contents(__DIR__.'/Fixtures/windows-1250.html'), 'Windows-1250');
+        $crawler->addHtmlContent(file_get_contents(__DIR__ . '/Fixtures/windows-1250.html'), 'Windows-1250');
 
         $this->assertEquals('Žťčýů', $crawler->filterXPath('//p')->text());
     }
