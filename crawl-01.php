@@ -10,15 +10,10 @@ include_once "vendor/autoload.php";
 
 use Symfony\Component\DomCrawler\Crawler;
 
-$html = '<html>
-<body>
-    <span id="article-100" class="article">Article 1</span>
-    <span id="article-101" class="article">Article 2</span>
-    <span id="article-102" class="article">Article 3</span>
-</body>
-</html>';
 
+$html = file_get_contents('http://monngonquetui.com/');
 $crawler = new Crawler();
+//$crawler->addHtmlContent($html);
 $crawler->addHtmlContent($html);
 
 $tag = $crawler->filterXPath('//body/*');
