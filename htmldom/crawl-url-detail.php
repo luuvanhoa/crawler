@@ -19,7 +19,7 @@ $urlPageCate = "https://www.carlist.my/new-cars-for-sale/malaysia?page_number=$i
 //$response = getListUrlFromCate($urlPageCate);
 
 $url = 'https://www.carlist.my/new-cars/perodua-axia-1-0g-auto-high-loan-otr-price-rm33400-only/5428538';
-//parseContentDetail($url);
+parseContentDetail($url);
 $properties = array(
     'name' => 'Teasfaaaaaaaaaaasdfasdfst',
     'slug' => 'pa_tesddddassst',
@@ -28,9 +28,6 @@ $properties = array(
     'has_archives' => true
 );
 //insertProperties($properties);
-$a = getListProperties();
-echo '<pre>'; var_dump($a);
-die;
 
 function getListUrlFromCate($urlPageCate)
 {
@@ -133,7 +130,6 @@ function connectWoocomerce()
 
 function parseContentDetail($urlDetail)
 {
-    $username = 'nginx';
     $html = curlHTMLContent($urlDetail);
     $objectHtml = str_get_html($html);
     if ($objectHtml) {
@@ -167,6 +163,7 @@ function parseContentDetail($urlDetail)
         $product['price'] = cleanContent($price, 'int');
         $product["enable_html_description"] = true;
 
+        // Images
         $images = array();
         $htmlImages = $objectHtml->find('div.cycle-slideshow', 1)->find('div.gallery__image');
         foreach ($htmlImages as $key => $image) {
@@ -176,6 +173,57 @@ function parseContentDetail($urlDetail)
         }
         $product['images'] = $images;
         $product['categories'] = array(array('id' => 15), array('id' => 148));
+
+        // Properties
+        $groupProperties = $objectHtml->find('div.cycle-slideshow', 2);
+        $titlePropertiesSpec = array();
+        $titlePropertiesEquip = array();
+
+        // Tab Specifications
+        $tabSpecifications = $groupProperties->find('div.cycle-slide', 0);
+        foreach ($tabSpecifications->find('h3.specifications__title') as $key => $element) {
+            $titlePropertiesSpec[$key]['title'] = cleanContent($element->plaintext);
+
+            $push_bottom = $tabSpecifications->find('div.push--bottom', $key)->find('div.list-item');
+            foreach ($push_bottom as $k => $v) {
+                $Title = $v->find('span.flexbox__item', 0)->plaintext;
+                $keyTitle = str_replace(array('®', '™'), array('', ''), $Title);
+                $keyTitle = remove_accents($keyTitle);
+                $keyTitle = sanitize_title_with_dashes($keyTitle);
+                $keyTitle = hyphenize($keyTitle);
+                $titlePropertiesSpec[$key]['content'][$keyTitle] = array(
+                    'key' => $Title,
+                    'value' => $v->find('span.flexbox__item', 1)->plaintext,
+                );
+            }
+        }
+
+        // Tab Equipment
+        $tabEquipment = $groupProperties->find('div.cycle-slide', 1);
+        foreach ($tabEquipment->find('h3.specifications__title') as $key => $element) {
+            $titlePropertiesEquip[$key]['title'] = cleanContent($element->plaintext);
+
+            $push_bottom = $tabEquipment->find('div.push--bottom', $key)->find('div.list-item');
+            foreach ($push_bottom as $k => $v) {
+                $Title = $v->find('span.flexbox__item', 0)->plaintext;
+                $keyTitle = str_replace(array('®', '™'), array('', ''), $Title);
+                $keyTitle = remove_accents($keyTitle);
+                $keyTitle = sanitize_title_with_dashes($keyTitle);
+                $keyTitle = hyphenize($keyTitle);
+                $titlePropertiesEquip[$key]['content'][$keyTitle] = array(
+                    'key' => $Title,
+                    'value' => $v->find('span.flexbox__item', 1)->plaintext,
+                );
+            }
+        }
+
+        echo '<pre>';
+        print_r($titlePropertiesSpec);
+        echo '</pre>';
+        echo '<pre>';
+        print_r($titlePropertiesEquip);
+        echo '</pre>';
+        die;
 
         try {
             $woocommerce = connectWoocomerce();
