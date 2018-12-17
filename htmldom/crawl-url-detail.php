@@ -21,8 +21,8 @@ $urlPageCate = "https://www.carlist.my/new-cars-for-sale/malaysia?page_number=$i
 $url = 'https://www.carlist.my/new-cars/perodua-axia-1-0g-auto-high-loan-otr-price-rm33400-only/5428538';
 //parseContentDetail($url);
 $properties = array(
-    'name' => 'Teasfaaaaaaaaaaasdfasdfst',
-    'slug' => 'pa_tesddddassst',
+    'name' => '',
+    'slug' => 'pa_',
     'type' => 'select',
     'order_by' => 'menu_order',
     'has_archives' => true
@@ -52,12 +52,6 @@ function _e($data)
     print_r($data);
     echo '</pre>';
     die;
-}
-
-function getKeyDetail($objectHtml, $selector, $type = 'plaintext')
-{
-    $text = $objectHtml->find($selector, 0)->{$type};
-    return $text;
 }
 
 function keyDetail($position)
@@ -182,9 +176,9 @@ function parseContentDetail($urlDetail)
             $rs = $woocommerce->post('products', $product);
 
             if ($rs) {
-                echo 'Ok';
-                die;
+                echo 'Ok'; die;
             }
+
             $lastRequest = $woocommerce->http->getRequest();
             $lastRequest->getUrl(); // Requested URL (string).
             $lastRequest->getMethod(); // Request method (string).
