@@ -2,6 +2,11 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/symfony/dom-crawler" />
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/basic/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/css-selector" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
